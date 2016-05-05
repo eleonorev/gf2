@@ -1,0 +1,218 @@
+body {
+  background-color: #F0f1f3;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #424242;
+  font-size: 1em;
+}
+
+#header {
+  height: auto;
+  background-color: #424242;
+  color: white;
+  height: 50px;
+  z-index: 2;
+}
+
+#header .menu {
+  display: inline-block;
+}
+
+#header .menu li {
+  display: block;
+  float: left;
+}
+
+#header .menu li a {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0;
+  color: #fff;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+
+}
+
+#header .menu li a:hover {
+  background-color: #424242;
+}
+
+#header .photoprofil {
+  width: 40px;
+  position: absolute;
+  margin-top: -10px;
+  line-height: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 10px;
+  float: left;
+  margin-left: -50px;
+}
+
+#navigation {
+  display: block;
+  float: left;
+  position: relative;
+  width: 30vw;
+  min-width: 350px;
+  height: 100vh;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#navigation h3 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 10px auto;
+  width: 200px;
+  background-color: #3FB8AF;
+  color: white;
+}
+
+.button.logout {
+  display: block;
+  background: transparent;
+  color: #3FB8AF;
+  border: 1px solid #3FB8AF;
+}
+
+.container {
+  display: block;
+  position: relative;
+}
+
+.article {
+  display: block;
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+    background-color: rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(69, 66, 82,0.5);
+  margin: 15px;
+  padding-top: 20px;
+}
+
+.article .date {
+  height: 100%;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.article .date .day, .article .date .month {
+  font-weight: bolder;
+  font-size: 34px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #94BDB3;
+}
+
+.article .date .month {
+  color: rgba(69, 66, 82,0.5);
+}
+
+.article .date .year {
+  color : rgba(69, 66, 82,0.3);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.article h3 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+  color: rgba(69, 66, 82,0.8);
+  text-transform: capitalize;
+}
+
+
+.article .postcontent {
+  display: block;
+  float: left;
+}
+
+.menuright {
+  position: fixed;
+  right: 40px;
+}
+
+#profile {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#profile .imgprofile {
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.3);
+  height: 170px;
+  width: 170px;
+  overflow: hidden;
+}
+
+#profile h3 {
+    color: #424242;
+}
+
+#profile .imgprofile img {
+  display: block;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  left: -10%;
+  top: -10%;
+  height: 250px;
+}
+
+#profile #stat {
+  width: auto;
+  display: inline-block;
+  margin: auto;
+  justify-content: center;
+}
+
+#profile #stat .block {
+  display: block;
+  float: left;
+    justify-content: center;
+    width: 80px;
+}
+
+#profile #stat .block .number {
+  display: block;
+  font-size: 3em;
+  width: 100%:
+}
+
+#profile #stat .block .text {
+  display: block;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+#userprofile .profil .pp  {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 300px
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+::-webkit-input-placeholder { color:#94BDB3; font-size: 17px; text-transform: lowercase; padding-top: 7px;}
+::-moz-placeholder { color:#94BDB3; font-size: 17px; text-transform: lowercase; padding-top: 7px;} /* firefox 19+ */
+:-ms-input-placeholder { color:#94BDB3; font-size: 17px; text-transform: lowercase; padding-top: 7px;} /* ie */
+input:-moz-placeholder { color:#94BDB3; font-size: 17px; text-transform: lowercase; padding-top: 7px;}
