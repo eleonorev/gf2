@@ -5,7 +5,7 @@ $compte = "INSERT INTO users (login, pass, facebooktoken, mail, photo, nblike, f
 $connection->exec($compte);
 
 
-$gif= "INSERT INTO gifs (link, content, tags, timedate, iduser, likers, report) VALUES ('http://welcomephagets.tumblr.com/post/51224026643/when-youre-full-on-starving', 'blablablablabalbalbaaa blbalablaaaaa', 'food,repas,manger', NOW(), 1, 0, 0);";
+$gif= "INSERT INTO gifs (link, content, tags, timedate, iduser, likers, report) VALUES ('http://www.reactiongifs.com/r/pat1.gif', 'blablablablabalbalbaaa blbalablaaaaa', 'food,repas,manger', NOW(), 1, 0, 0);";
 $connection->exec($gif);
 
 $gif= "INSERT INTO gifs (link, content, tags, timedate, iduser, likers, report) VALUES ('https://media.giphy.com/media/ueRbr6r0Lev5e/giphy.gif', 'blablablablbalbaaa blbalablaaaaa', 'shock,marionnette,omg', NOW(), 1, 0, 0);";

@@ -44,6 +44,15 @@ function nb_follow($login) {
   return $nbfollow;
 }
 
+function get_login($iduser) {
+  include 'config/database.php';
+  $result = $connection->prepare("SELECT login FROM users WHERE id ='".$iduser."';");
+  $result->execute();
+  $login = $result->fetchAll(PDO::FETCH_ASSOC);
+$log =  $login[0]['login'];
+  return $log;
+}
+
 function create_user() {
   $error = 0;
   if ($_POST['passwd_one'] != $_POST['passwd_two']) {
