@@ -157,7 +157,37 @@ a{color:inherit;text-decoration:none}
 }
 
 
+#toggle {
+  width: 28px;
+  height: 30px;
+  margin: 10px auto;
+  display: block;
+  position: fixed;
+  left: 31vw;
+  top: 0px;
+  z-index: 40 !important;
+}
 
+#toggle div {
+  width: 100%;
+  height: 5px;
+  background: white;
+  margin: 4px auto;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+}
+
+#toggle.on .one {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+  opacity: 0;
+}
+
+#toggle.on .three {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
 
 .hr{
 	height:1px;

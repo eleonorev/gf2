@@ -5,5 +5,8 @@ $(document).ready(function() {
     $(".container").toggleClass("active");
   });
 
+  $('.coeur').click(function(){
+    $(this).toggleClass('active');
+  });
 
 });
